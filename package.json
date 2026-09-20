@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-hidemy",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n community node for HideMy.world: create private email addresses with rules and multi-channel delivery, search received emails, and trigger workflows when an email arrives",
 	"license": "MIT",
 	"homepage": "https://hidemy.world",
