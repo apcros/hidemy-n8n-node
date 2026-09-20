@@ -1,0 +1,62 @@
+{
+	"name": "n8n-nodes-hidemy",
+	"version": "0.1.0",
+	"description": "n8n community node for HideMy.world: create private email addresses with rules and multi-channel delivery, search received emails, and trigger workflows when an email arrives",
+	"license": "MIT",
+	"homepage": "https://hidemy.world",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"hidemy",
+		"hidemy.world",
+		"email",
+		"inbound-email",
+		"email-parsing",
+		"webhook"
+	],
+	"author": {
+		"name": "Jules Decol",
+		"email": "jules@inspicio.tech",
+		"url": "https://github.com/apcros"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/apcros/hidemy-n8n-node.git"
+	},
+	"bugs": {
+		"url": "https://github.com/apcros/hidemy-n8n-node/issues"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/HideMyApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/HideMy/HideMy.node.js",
+			"dist/nodes/HideMy/HideMyTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.48.5",
+		"eslint": "9.39.4",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

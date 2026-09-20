@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-hidemy.hideMy",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Communication", "Developer Tools"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/apcros/hidemy-n8n-node?tab=readme-ov-file#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/apcros/hidemy-n8n-node?tab=readme-ov-file"
+			}
+		]
+	}
+}
