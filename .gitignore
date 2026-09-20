@@ -1,3 +1,5 @@
 dist
 node_modules
 .DS_Store
+# never commit npm auth (the repo is public; tokens live in GitHub Actions secrets only)
+.npmrc

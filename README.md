@@ -82,7 +82,7 @@ Node API version 1. Tested against n8n 2.17 (every operation executed through th
 ## Usage
 
 - The Address, Pipeline and Channel parameters are resource locators: pick from a list or paste an ID (24 hexadecimal characters).
-- Every operation maps to the public API documented by `GET https://api.hidemy.world/v1`. Errors from the API are surfaced with their message, for example a plan limit (`402`) or a webhook URL rejected by the SSRF guard (`400`).
+- Every operation maps to the public API documented by `GET https://api.hidemy.world/v1`. Errors from the API are surfaced with their message, for example a plan limit (`402`), a webhook URL rejected by the SSRF guard (`400`) or the rate limit of 600 requests per minute per key (`429`, with `Retry-After`).
 - The main node can be used as a tool by AI agents.
 
 ## Resources
