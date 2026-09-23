@@ -2,7 +2,7 @@
 	"node": "n8n-nodes-hidemy.hideMy",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Communication", "Developer Tools"],
+	"categories": ["Communication", "Development"],
 	"resources": {
 		"credentialDocumentation": [
 			{
